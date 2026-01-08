@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  margin: 0 auto;
+}
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header ul li {
+  color: white;
+}
+.header ul li a {
+  color: blue;
+  text-decoration: none;
+}
+
+.content {
+  background: radial-gradient(circle, #c3cfc1 10%, white 10%) repeat center/10px 10px;
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.content .wrap {
+  padding: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.content .wrap .workCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 320px;
+  color: rgb(46, 46, 46);
+  border: solid 1px rgb(46, 46, 46);
+  margin: 12px;
+}
+.content .wrap .workCard img {
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .wrap .workCard h3 {
+  padding: 4px;
+  font-size: 24px;
+  margin: 8px 0;
+}
+.content .wrap .workCard p {
+  padding: 4px;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.content .wrap .workCard button {
+  border: none;
+  background-color: rgb(46, 46, 46);
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.content .wrap .workCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+  border: solid 1px #939c92;
+}
+.content .wrap .workCard:hover button {
+  background-color: #c3cfc1;
+  color: white;
+}
+.content .wrap .workCard:active {
+  box-shadow: 0 1px 2px rgb(46, 46, 46);
+}
+.content .wrap .workCard:active button {
+  background-color: #939c92;
+}
+
+.footer {
+  height: 32px;
+  background-color: gray;
+  text-align: center;
+}/*# sourceMappingURL=myProject.css.map */

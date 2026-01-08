@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+  background-color: black;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    li {
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      color: white;
+    }
+  }
+}
+.content {
+      background: radial-gradient(circle, #c3cfc1 10%, #ffff 10%)repeat center / 10px 10px;
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  .wrap {
+
+  padding: 12px;
+    justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+ 
+  .workCard {
+    display: flex;
+    flex-direction: column;    
+    border-radius: 8px;
+    width: 320px;
+    color:rgb(46, 46, 46);
+    border: solid 1px rgb(46, 46, 46);
+    margin: 12px;
+
+    img {
+      border-radius: 8px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    h3 {
+      padding: 4px;
+      font-size: 24px;
+      margin: 8px 0;
+    }
+    p {
+      padding: 4px;
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    button {
+        border: none;
+      background-color: rgb(46, 46, 46);
+      color: #fff;
+      padding: 4px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .workCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+    border: solid 1px #939c92;
+    button {
+      background-color: #c3cfc1;
+      color: white;
+    }
+  }
+  .workCard:active {
+    box-shadow: 0 1px 2px rgb(46, 46, 46);
+    button {
+      background-color: #939c92;
+    }
+  }
+}
+
+
+}
+
+
+.footer {
+  height: 32px;
+  background-color: gray;
+  text-align: center;
+}
