@@ -8,21 +8,26 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: 60px;
-  background-color: black;
+  background-color: rgb(46, 46, 46);
   margin: 0 auto;
 }
 .header ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-self: center;
 }
 .header ul li {
+  margin: 8px;
   color: white;
 }
 .header ul li a {
-  color: blue;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
