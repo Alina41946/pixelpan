@@ -32,29 +32,65 @@ body {
 .content {
       background: radial-gradient(circle, #c3cfc1 10%, #ffff 10%)repeat center / 10px 10px;
   flex: 1;
+
   background-color: #f0f0f0;
   padding: 20px;
-  .wrap {
+  .intro{
+    background-color: #676b68;
+    .introList{
+  padding: 20px;
+      h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+      p{
+        padding: 12px;
+        border: #939c92 dashed 1px;
+        margin-bottom: 24px;
+        color: #c9c9c9;
+        
+      }
+      ul{
+       
+        li{
+          padding: 12px;
+          margin-bottom: 8px;
+          border: #7c7c7c solid 1px;
+          background-color: #939c92;
+           cursor: pointer;
+        }
+        li.active {
+  font-weight: bold;
+  color: #6e0000;
+}
+      }
 
-  padding: 12px;
-    justify-content: center;
-  flex-wrap: wrap;
+    }
+
+  }
+  .wrapCard {
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: fit-content;
+  flex-wrap: wrap; /* 允許換行 */
+  gap: 12px;       /* 元素間距 */
+  
  
   .workCard {
-    display: flex;
-    flex-direction: column;    
-    border-radius: 8px;
-    width: 320px;
+     
+     display: flex; 
+     flex-direction: column;
+    width: 320px;    
     color:rgb(46, 46, 46);
     border: solid 1px rgb(46, 46, 46);
     margin: 12px;
 
     img {
-      border-radius: 8px;
-      width: 100%;
-      height: 200px;
+      
+      width: 100%;     
       object-fit: cover;
+      height: 200px;
     }
     h3 {
       padding: 4px;
@@ -71,7 +107,7 @@ body {
       background-color: rgb(46, 46, 46);
       color: #fff;
       padding: 4px 16px;
-      border-radius: 4px;
+  
       cursor: pointer;
     }
   }
@@ -100,6 +136,9 @@ body {
 
 .footer {
   height: 32px;
-  background-color: gray;
+  background-color: rgb(46,46,46);;
   text-align: center;
+
+  line-height: 32px;
+  color: white;
 }
