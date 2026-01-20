@@ -1,25 +1,29 @@
 html, body {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
 }
 
 .header {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 60px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
   background-color: rgb(46,46,46);
   margin: 0 auto;
+
   ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-self: center;
+
     li {
-        margin: 8px ;
+      margin: 8px;
+
       a {
         font-size: 16px;
         color: rgb(255, 255, 255);
@@ -29,116 +33,116 @@ body {
     }
   }
 }
-.content {
-      background: radial-gradient(circle, #c3cfc1 10%, #ffff 10%)repeat center / 10px 10px;
-  flex: 1;
 
+.content {
+  background: radial-gradient(circle, #c3cfc1 10%, #ffff 10%) repeat center / 10px 10px;
+  flex: 1;
   background-color: #f0f0f0;
   padding: 20px;
-  .intro{
+
+  .intro {
     background-color: #676b68;
-    .introList{
-  padding: 20px;
+
+    .introList {
+      padding: 20px;
+
       h2 {
         color: white;
         margin-bottom: 20px;
       }
-      p{
+
+      p {
         padding: 12px;
         border: #939c92 dashed 1px;
         margin-bottom: 24px;
         color: #c9c9c9;
-        
       }
-      ul{
-       
-        li{
+
+      ul {
+        li {
           padding: 12px;
           margin-bottom: 8px;
           border: #7c7c7c solid 1px;
           background-color: #939c92;
-           cursor: pointer;
+          cursor: pointer;
+
+          &.active {
+            font-weight: bold;
+            color: #6e0000;
+          }
         }
-        li.active {
-  font-weight: bold;
-  color: #6e0000;
-}
+      }
+    }
+  }
+
+  .wrapCard {
+    display: flex;
+    flex-wrap: wrap;       // 允許換行
+    justify-content: center; // 水平置中
+    gap: 20px;             // 卡片間距
+    height: fit-content;
+
+    .workCard {
+      display: flex; 
+      flex-direction: column; // flex-column
+      width: 320px;
+      color: rgb(46, 46, 46);
+      border: solid 1px rgb(46, 46, 46);
+      margin: 12px;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
       }
 
-    }
+      h3 {
+        padding: 4px;
+        font-size: 24px;
+        margin: 8px 0;
+      }
 
-  }
-  .wrapCard {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  height: fit-content;
-  flex-wrap: wrap; /* 允許換行 */
-  gap: 12px;       /* 元素間距 */
-  
- 
-  .workCard {
-     
-     display: flex; 
-     flex-direction: column;
-    width: 320px;    
-    color:rgb(46, 46, 46);
-    border: solid 1px rgb(46, 46, 46);
-    margin: 12px;
+      p {
+        padding: 4px;
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
 
-    img {
-      
-      width: 100%;     
-      object-fit: cover;
-      height: 200px;
-    }
-    h3 {
-      padding: 4px;
-      font-size: 24px;
-      margin: 8px 0;
-    }
-    p {
-      padding: 4px;
-      font-size: 16px;
-      margin-bottom: 12px;
-    }
-    button {
+      button {
         border: none;
-      background-color: rgb(46, 46, 46);
-      color: #fff;
-      padding: 4px 16px;
-  
-      cursor: pointer;
-    }
-  }
+        background-color: rgb(46, 46, 46);
+        color: #fff;
+        padding: 4px 16px;
+        cursor: pointer;
+        margin-top: auto; // 按鈕固定在卡片底部
+      }
 
-  .workCard:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.01);
-    transition: transform 0.3s ease;
-    border: solid 1px #939c92;
-    button {
-      background-color: #c3cfc1;
-      color: white;
-    }
-  }
-  .workCard:active {
-    box-shadow: 0 1px 2px rgb(46, 46, 46);
-    button {
-      background-color: #939c92;
+      &:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.01);
+        transition: transform 0.3s ease;
+        border: solid 1px #939c92;
+
+        button {
+          background-color: #c3cfc1;
+          color: white;
+        }
+      }
+
+      &:active {
+        box-shadow: 0 1px 2px rgb(46, 46, 46);
+        button {
+          background-color: #939c92;
+        }
+      }
     }
   }
 }
-
-
-}
-
 
 .footer {
   height: 32px;
-  background-color: rgb(46,46,46);;
+  background-color: rgb(46,46,46);
   text-align: center;
-
   line-height: 32px;
   color: white;
 }
